@@ -8,9 +8,10 @@ This is the code repository for the paper: MLDebugging: Towards Benchmarking Cod
 
 
 
-## Preparation steps: environment installation
+## Evaluation
 
 ```
 pip install -r requirements-eval.txt
+cd eval
+python evaluate.py your/path/to/results.jsonl
 ```
-

@@ -139,25 +139,13 @@ def untrusted_check(
 
     return stat, details
 
-model_type = "gpt-4o-mini-2024-07-18"
-# model_type='gpt-40.4'
-# model_type='gpt-3.5-turbo'
-# model_type = "claude-3-5-sonnet-20241022-test_case-feedback-t0"
-# model_type='LLama3.1-8b'
-# model_type = "CodeQwen-14B"
-# model_type = "gpt-3.5-turbo-test_case-feedback"
-# model_type = "Mistral-7b"
-# model_type = "gemini-1.5-pro-latestt0.6"
-# model_type='Deepseek-Coder-14b'
-model_type = "R1"
-# arguments = sys.argv
-# model_type = arguments[1]
+import sys
+arguments = sys.argv
+result_path = arguments[1]
 
 from tqdm import tqdm
 def main():
-    # results = get_jsonl_file(f"/home/jyhuang/code/MLDebug/inference/fewshots_result/{model_type}.jsonl")
-    # results = get_jsonl_file(f"/home/jyhuang/code/MLDebug/inference/result/{model_type}.jsonl")
-    results = get_jsonl_file("/home/jyhuang/code/MLDebug/inference/result/DeepSeek-R1-cot.jsonl")
+    results = get_jsonl_file(result_path)
     category_dict = {
     "Type Mismatch":{"all":0, "pass":0},
     "Data Transfer Issues":{"all":0, "pass":0},

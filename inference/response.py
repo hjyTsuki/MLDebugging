@@ -10,36 +10,6 @@ class Responser(ABC):
     def respond(self, system_info: str, user_prompt: str) -> str:
         pass
 
-
-# class TurboResponser(Responser):
-#     """ Openai LLM responser """
-
-#     def __init__(self, model='gpt-3-turbo'):
-#         """ environment information """
-#         self.model = model
-#         # openai.api_key = 'sk-hptadds0MqwHSpO4f3ZjQdZA6tGgflTK2Fb2c5ffkR36PdBw'
-#         # openai.api_base = 'https://xiaoai.plus/v1'
-#         openai.api_key = "sk-M14akbdYvKD8OWAv0e2cD978D2D84f47B801Dc3bE172B6F2"
-#         openai.api_base = "http://vip.ooo.cool/v1"
-
-#     def respond(self, system_info: str, user_prompt: str) -> str:
-
-#         messages = [
-#             {"role": "system", "content": system_info},
-#             {"role": "user", "content": user_prompt}
-#         ]
-#         response = openai.ChatCompletion.create(
-#             # model='gpt-4',
-#             # model='gpt-3.5-turbo',
-#             # model = "gpt-4o-mini-2024-07-18",
-#             # model='gpt-4o',
-#             # model='gpt-3.5-turbo-16k',
-#             model = self.model,
-#             temperature=0,
-#             messages=messages
-#         )
-#         return response['choices'][0]['message']['content']
-
 class TurboResponser(Responser):
     """ Openai LLM responser """
 
@@ -47,13 +17,6 @@ class TurboResponser(Responser):
         """ environment information """
         # openai.api_key = os.environ.get("OPENAI_API_KEY")
         # openai.api_base = os.environ.get("OPENAI_API_BASE")
-        # openai.api_key = 'sk-MfsGu5ILuHxYMuoSGYAbX0lwMMO2rnfjIqMZGxI0RgLaf89Y'
-        # openai.api_base = 'https://www.blueshirtmap.com/v1'
-        # openai.api_key = "sk-y78PUFWUEuN5ZmNx7826D16888134f398a872c7cC75dA722"
-        # openai.api_base = "https://one.ooo.cool/v1"
-        openai.api_key = "sk-tfxw7TpDIIkzwk6h58Bf444cD9B7480a8e04A9D51994C61a"
-        openai.api_base = "https://one.ooo.cool/v1"
-        openai.api_key = "sk-tfxw7TpDIIkzwk6h58Bf444cD9B7480a8e04A9D51994C61a"
 
         self.model = model
 
@@ -85,10 +48,6 @@ class GeminiResponser(Responser):
     def __init__(self, model='gpt-3-turbo'):
         """ environment information """
         self.model = model
-        openai.api_key = 'sk-hptadds0MqwHSpO4f3ZjQdZA6tGgflTK2Fb2c5ffkR36PdBw'
-        openai.api_base = 'https://xiaoai.plus/v1'
-        openai.api_key = "sk-tfxw7TpDIIkzwk6h58Bf444cD9B7480a8e04A9D51994C61a"
-        openai.api_base = "https://one.ooo.cool/v1"
 
     def respond(self, system_info: str, user_prompt: str) -> str:
 
@@ -110,8 +69,6 @@ class DeepSeekResponser(Responser):
     def __init__(self, model='gpt-3-turbo'):
         """ environment information """
         self.model = model
-        openai.api_key = 'sk-hbsbzutooubnzifhooemtgznobyixupmtvytphtwxsjcvrmw'
-        openai.api_base = 'https://api.siliconflow.cn/v1'
 
     def respond(self, system_info: str, user_prompt: str) -> str:
 
