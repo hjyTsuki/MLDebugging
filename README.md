@@ -24,7 +24,7 @@ cd eval
 python evaluate.py your/path/to/results.jsonl
 ```
 
-## 🛠️Data Collection
+## 🛠️ Data Collection
 
 ![](./assets/pipeline.png)
 
