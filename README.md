@@ -1,7 +1,6 @@
 # MLDebugging
 <div>
-<img src="./assets/csu_logo.png" width="48%">
-<img src="./assets/hku_logo.png" width="48%">
+<img src="./assets/log.png" width="96%">
 </div>
 
 
