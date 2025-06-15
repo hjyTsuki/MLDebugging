@@ -26,12 +26,13 @@ python evaluate.py your/path/to/results.jsonl
 
 ## 🛠️Data Collection
 
-![](D:\Research\MLDebug\MLDebugging\assets\pipeline.png)
+![](assets\pipeline.png)
 
 Illustration of the MLDebugging Dataset Construction Process
-
-
 
 ## 💬 Contact
 
 If you have any questions or suggestions, please create a GitHub issue or email [JinYang Huang](hjy.tsuki@gmail.com).
+
+
+
