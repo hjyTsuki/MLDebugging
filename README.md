@@ -26,7 +26,7 @@ python evaluate.py your/path/to/results.jsonl
 
 ## 🛠️Data Collection
 
-![](assets\pipeline.png)
+![](./assets/pipeline.png)
 
 Illustration of the MLDebugging Dataset Construction Process
 
