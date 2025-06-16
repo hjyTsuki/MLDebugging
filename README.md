@@ -32,7 +32,7 @@ Illustration of the MLDebugging Dataset Construction Process
 
 ## 💬 Contact
 
-If you have any questions or suggestions, please create a GitHub issue or email [JinYang Huang](hjy.tsuki@gmail.com).
+If you have any questions or suggestions, please create a GitHub issue or email [JinYang Huang](hjy.tsuki@gmail.com) , [Xiachong Feng](xiachongfeng1996@gmail.com), [Libo Qin](lbqin@csu.edu.cn).
 
 
 
